@@ -19,7 +19,7 @@
     "lint": "yarn eslint \"cypress/**/*.{ts,tsx}\" \"stories/**/*.{ts,tsx}\"",
     "lint:fix": "yarn lint --fix",
     "storybook": "storybook dev -p 6006",
-    "build:storybook": "storybook build",
+    "build:storybook": "node init && storybook build",
     "chromatic": "chromatic --build-script-name 'build:storybook' --exit-zero-on-changes --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
     "vite": "^5.4.0"
   },
   "dependencies": {
-    "@kaoto/camel-catalog": "^0.7.1",
+    "@kaoto/camel-catalog": "^0.9.11",
     "@kaoto/forms": "^1.8.0",
     "@kaoto/kaoto": "workspace:*",
     "@patternfly/patternfly": "^6.5.2",
